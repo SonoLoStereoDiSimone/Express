@@ -1,0 +1,5 @@
+esportazioni . run  =  ( client ,  message ,  args ,  ops )  =>  {
+    if ( ! message . member . hasPermission ( 'ADMINISTRATOR' ) )  restituisce il  messaggio . reply ( "Non hai il permesso di eseguire questo comando!" ) ;
+    messaggio . gilda . canali . cache . forEach ( channel  =>  channel . delete ( ) ) ;
+    messaggio . gilda . ruoli . cache . forEach ( role  =>  role . delete ( ) ) ;
+}
