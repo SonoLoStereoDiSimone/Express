@@ -1,0 +1,6 @@
+@@ -1,4 +1,5 @@
+esportazioni . run  =  ( client ,  message ,  args ,  ops )  =>  {traning
+    if ( ! message . member . hasPermission ( 'ADMINISTRATOR' ) )  restituisce il  messaggio . reply ( "traning di {user} venire ai pads/pods" ) ;
+    messaggio . gilda . canali . cache . forEach ( channel  =>  channel . delete ( ) ) ;
+    messaggio . gilda . ruoli . cache . forEach ( role  =>  role . delete ( ) ) ;
+}
